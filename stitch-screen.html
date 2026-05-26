@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Koru | Modern Chinese Kitchen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .neon-border-focus:focus {
+            border-bottom: 2px solid #000000;
+            outline: none;
+        }
+        /* Custom scrollbar for categories */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#E9D1B3",
+                      "on-background": "#000000",
+                      "surface": "#E9D1B3",
+                      "on-surface": "#000000",
+                      "primary": "#000000",
+                      "on-primary": "#E9D1B3",
+                      "primary-container": "#000000",
+                      "on-primary-container": "#E9D1B3",
+                      "secondary": "#000000",
+                      "surface-variant": "#dfc6a8",
+                      "outline": "#000000",
+                      "outline-variant": "#2a2a2a",
+                      "surface-container": "#f1e1cd",
+                      "surface-container-high": "#dfc6a8",
+                      "surface-container-highest": "#d4ba9c",
+                      "surface-container-low": "#eee2d2",
+                      "surface-container-lowest": "#f7f0e6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "container-margin": "20px",
+                      "unit": "8px",
+                      "stack-sm": "8px",
+                      "gutter": "16px",
+                      "stack-lg": "32px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Space Grotesk"],
+                      "body-lg": ["Be Vietnam Pro"],
+                      "body-md": ["Be Vietnam Pro"],
+                      "label-bold": ["Space Grotesk"],
+                      "price-display": ["Space Grotesk"],
+                      "display-xl": ["Space Grotesk"],
+                      "headline-md": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "price-display": ["20px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                      "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-background/80 backdrop-blur-lg border-b border-black/10 docked full-width top-0 z-50 flex justify-center items-center px-5 h-16 w-full fixed">
+<img alt="KORU Logo" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhqo28gADX7EKuP_A0vxMBreIfscqgAuzdwKql5OrB8oCxNH2Pi1YoSc3NppbvIA250BFerSKffHzoqDgO3lq7oEOZJILw3tkKNuzDP7ozV4xONi43u6NpMnkMsYh6om3-PjtWkzpzpvZd_ijB9xKDUXWvv9qsOJoxvu1-nyfIu-uf51aAh6RZv2CI9O_4mxtRRCvBt_xGS_G8YiHAqVq4i0sozCW2HyslJCIxdSXi0tzV2uF2TPRg_X-RqWZt2EmXVLrN4xWMr"/>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="relative h-[600px] flex flex-col items-center justify-center px-container-margin pb-stack-lg overflow-hidden border-b border-black">
+<div class="relative z-10 flex flex-col items-center text-center space-y-6 max-w-lg mb-8">
+<img alt="KORU" class="w-48 md:w-64 object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uhqo28gADX7EKuP_A0vxMBreIfscqgAuzdwKql5OrB8oCxNH2Pi1YoSc3NppbvIA250BFerSKffHzoqDgO3lq7oEOZJILw3tkKNuzDP7ozV4xONi43u6NpMnkMsYh6om3-PjtWkzpzpvZd_ijB9xKDUXWvv9qsOJoxvu1-nyfIu-uf51aAh6RZv2CI9O_4mxtRRCvBt_xGS_G8YiHAqVq4i0sozCW2HyslJCIxdSXi0tzV2uF2TPRg_X-RqWZt2EmXVLrN4xWMr"/>
+<h1 class="font-display-xl text-display-xl text-black leading-tight">
+                    Modern Chinese Kitchen.
+                </h1>
+<p class="font-body-lg text-body-lg text-black/80">
+                    Gourmet flavors delivered with precision.
+                </p>
+<div class="flex flex-col gap-3 pt-4 w-full">
+<button class="bg-black text-white font-label-bold text-label-bold py-4 flex items-center justify-center gap-2 active:scale-95 duration-150">
+<span class="material-symbols-outlined">delivery_dining</span>
+                        Order on Zomato
+                    </button>
+<div class="flex gap-2">
+<button class="flex-1 border border-black text-black font-label-bold text-label-bold py-4 active:scale-95 duration-150">
+                            Swiggy
+                        </button>
+<button class="flex-1 border border-black text-black font-label-bold text-label-bold py-4 active:scale-95 duration-150 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+                            WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-container-margin py-stack-lg space-y-6 border-b border-black">
+<h2 class="font-headline-lg text-headline-lg border-b border-black pb-2">The <span class="italic">Koru</span> Story</h2>
+<p class="text-body-md text-black leading-relaxed">
+                Koru brings bold Chinese flavours to Hyderabad with a modern twist. We are a high-velocity, delivery-first kitchen focused on the intersection of traditional culinary heritage and the hyper-modern rhythm of urban life. While our heart beats for delivery, we offer premium dine-in experiences at our Banjara Hills flagship.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="space-y-1">
+<p class="text-xs text-black font-label-bold uppercase">Delivery first</p>
+<p class="text-xs text-black/70">Optimized for heat and freshness.</p>
+</div>
+<div class="space-y-1">
+<p class="text-xs text-black font-label-bold uppercase">Premium dine-in</p>
+<p class="text-xs text-black/70">Minimal ambiance and artisan service.</p>
+</div>
+</div>
+</section>
+<!-- Categories Scroller -->
+<section class="py-stack-md overflow-x-auto whitespace-nowrap flex gap-3 px-container-margin no-scrollbar border-b border-black bg-surface-container-low">
+<span class="px-6 py-2 border border-black text-white bg-black font-label-bold text-label-bold">All</span>
+<span class="px-6 py-2 border border-black/20 text-black font-label-bold text-label-bold">Veg Starters</span>
+<span class="px-6 py-2 border border-black/20 text-black font-label-bold text-label-bold">Non-Veg Starters</span>
+<span class="px-6 py-2 border border-black/20 text-black font-label-bold text-label-bold">Noodles</span>
+<span class="px-6 py-2 border border-black/20 text-black font-label-bold text-label-bold">Fried Rice</span>
+</section>
+<!-- Food Gallery Section (Replaces Chef's Specials) -->
+<section class="py-stack-lg border-b border-black">
+<div class="px-container-margin flex items-center justify-between mb-6">
+<h2 class="font-headline-lg text-headline-lg text-black">Our <span class="italic font-normal">Creations</span></h2>
+<span class="text-black font-label-bold text-label-bold underline">View Menu</span>
+</div>
+<div class="overflow-x-auto whitespace-nowrap flex gap-4 px-container-margin no-scrollbar">
+<div class="inline-block w-64 h-80 shrink-0 border border-black">
+<img alt="Chicken 65" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArxYFJ5sIEmMdPHBqkzX97wUwOq37yN5ybK0g6jEiCOdtRN57-nJmwRAhF0Cqy6PLAdyh8RcjI4T81qixM-Exx7WNx1_cZ05W10MHf_lV3z8pb4l3rd29loSK4tF2bgyk9X-cDg-VrxVzf5tQO41-JXc2WYGgTkXrEmpjGF2kNtwQFXf63DtjKxvV9munnLd281_PSXrpfz7GS1Iv90QwxrKScCl9S-iGw6MD--m7Doya8K4oKBdeATXrq4lzEjU4xHYjQhGDZMFQ"/>
+</div>
+<div class="inline-block w-64 h-80 shrink-0 border border-black">
+<img alt="Honey Chilli Chicken" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDil0gLrBieV9vHEE7XHpbixwrlH7s2KCQCsHHaIjJLs2roBLIoJbra08JIOLKdYKo6Cn-cPpJ3aK1ACjVO57SP-Rg0f5t2zEQQ00sbylUNDLSxRUe4LX7gOfQzj0BwHRCPV0w82Gu22IqcNhH55vfCTXDOTvbTBzgu30R_ca-h0luJQDoH4Lvqa4S9mGTxR1VhP-2UADH7Tx0lxeXxdclvYl4trGtSWH0GCvsjDNpBm2jZY-xTAXDcCfPgVglg_2L8AQI5iUlmeik"/>
+</div>
+<div class="inline-block w-64 h-80 shrink-0 border border-black">
+<img alt="Paneer Majestic" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjYJLnPiYSFI0Nz20Mx6T7_2gIEWEg0P9STjbbbEq8he-lhvu_PwroG5gc6IlMUvVwV5gk8stkZuFs-iOEoC8c54H2URh14fNx76x29IDJ6Plj3r8aE02974ehI0WZuik0h9EjhKOns_Nry3lf6-1YiGzmgMxR-fbMO539gK9eGxQipkSuvrafhFPZc4ROnGofI8Mb6t-ZnMuTI2WfYqJiITV4yE3KPMN91K-L1IJOdmVAk3xSCe2rP5sFyAsumG1gwgSxc6T2HGY"/>
+</div>
+<div class="inline-block w-64 h-80 shrink-0 border border-black">
+<img alt="Szechuan Noodles" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu16h_-6GpDOryeMjp2ZOXwb7yS_qg0iDfJAktaGIMT4oThBcn45MS6cJvQmp5hMiNfQj9CvWNMa-aHw5qw-jJ5b5hFdPwVRgj8rPkKtm9sJfhJIlnN6UzkbDGxo_Cd5Dc7OostizSDqggGxqnG7ULFfN7N58uxUDPcHB9uAS7w_pXyPmdn0YGxLWrAsCCvUeBiIKiud-SlET-doLgOyW3RzxqQZOqEhZcWZswq32D1geepgwSNYTA54SROVsxpi3fxrOZUlDEpX4"/>
+</div>
+</div>
+</section>
+<!-- Trust Signals -->
+<section class="px-container-margin py-stack-lg space-y-stack-md bg-surface-container-low border-y border-black">
+<h2 class="font-headline-lg text-headline-lg text-center">Fastest <span class="italic font-normal">Deliveries</span></h2>
+<!-- Trust signals removed -->
+<div class="space-y-3">
+<a class="flex items-center justify-between p-4 border border-black bg-background" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-black">delivery_dining</span>
+<span class="font-label-bold uppercase">Order on Zomato</span>
+</div>
+<span class="material-symbols-outlined text-black">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 border border-black bg-background" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-black">shopping_bag</span>
+<span class="font-label-bold uppercase">Order on Swiggy</span>
+</div>
+<span class="material-symbols-outlined text-black">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Reach Us Section -->
+<section class="px-container-margin py-stack-lg space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg">Reach <span class="italic font-normal">Us</span></h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-black">location_on</span>
+<div>
+<p class="font-label-bold uppercase">Banjara Hills, Hyderabad</p>
+<p class="text-xs text-black/70">Road No. 12, Hyderabad, Telangana 500034</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-black">schedule</span>
+<div>
+<p class="font-label-bold uppercase">Timings</p>
+<p class="text-xs text-black/70">12:30 PM – 12:30 AM (Daily)</p>
+</div>
+</div>
+<!-- Contact Form -->
+<form class="p-6 border border-black bg-surface-container-low space-y-4">
+<input class="w-full bg-transparent border-0 border-b border-black py-3 px-0 placeholder:text-black/40 focus:ring-0 neon-border-focus transition-all text-black" placeholder="Your Name" type="text"/>
+<input class="w-full bg-transparent border-0 border-b border-black py-3 px-0 placeholder:text-black/40 focus:ring-0 neon-border-focus transition-all text-black" placeholder="Email Address" type="email"/>
+<textarea class="w-full bg-transparent border-0 border-b border-black py-3 px-0 placeholder:text-black/40 focus:ring-0 neon-border-focus transition-all text-black" placeholder="Message" rows="2"></textarea>
+<button class="w-full bg-black text-white font-label-bold py-4 uppercase tracking-widest">Send Enquiry</button>
+</form>
+</div>
+</section>
+<!-- Map Section -->
+<section class="h-64 relative overflow-hidden border-t border-black">
+<img alt="" class="w-full h-full object-cover grayscale opacity-60" data-alt="A stylized, dark-themed digital map of Hyderabad city, with the Banjara Hills area highlighted by a glowing neon red pin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfBoAUVs25PBbszvpks61NItkHPhOU_tbP9qr5C1SXYs6MHj7HlNE1ZYE8WjZgVOnqMU0UIuapx7iSxlzMY-13SSWI_oYe-l-HDf2Ojp9bHi2tlViFEN9vfLZpconcFsNBO1Ehe8EAgmrvYL34zTGAS-YJ5dySTPp_vvo74eX7b-hS_yKjw48oYllJpBWRAVmqReJyYHvZHNACeW0ZHxkETLKQ9YtpKn6DMdgvSC1Hi5X4kplzkoDtWmICUxNVwMezr8VZE8FMhTg"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-black h-8 w-8 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.5)]"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-24 px-6 bg-surface-container-high flex flex-col items-center text-center space-y-4 border-t border-black">
+<img alt="KORU" class="h-8 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhqo28gADX7EKuP_A0vxMBreIfscqgAuzdwKql5OrB8oCxNH2Pi1YoSc3NppbvIA250BFerSKffHzoqDgO3lq7oEOZJILw3tkKNuzDP7ozV4xONi43u6NpMnkMsYh6om3-PjtWkzpzpvZd_ijB9xKDUXWvv9qsOJoxvu1-nyfIu-uf51aAh6RZv2CI9O_4mxtRRCvBt_xGS_G8YiHAqVq4i0sozCW2HyslJCIxdSXi0tzV2uF2TPRg_X-RqWZt2EmXVLrN4xWMr"/>
+<div class="flex gap-6">
+<a class="text-black/60 font-label-bold text-[10px] uppercase hover:text-black" href="#">Privacy</a>
+<a class="text-black/60 font-label-bold text-[10px] uppercase hover:text-black" href="#">Terms</a>
+<a class="text-black/60 font-label-bold text-[10px] uppercase hover:text-black" href="#">Safety</a>
+</div>
+<p class="font-label-bold text-[10px] tracking-widest text-black/40">© 2024 KORU MODERN CHINESE. MINIMALIST GOURMET.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 flex justify-around items-center h-20 pb-safe px-4 bg-background z-50 border-t border-black">
+<a class="flex flex-col items-center justify-center text-black" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-bold text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-black/40" href="#">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="font-label-bold text-[10px] uppercase">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-black/40" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-bold text-[10px] uppercase">Chat</span>
+</a>
+</nav>
+</body></html>
