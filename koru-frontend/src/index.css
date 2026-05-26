@@ -2,22 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Load local AllRounder Medium font - place font files in public/fonts/ */
-@font-face {
-  font-family: 'AllRounder';
-  src: url('/fonts/AllRounder-Medium.woff2') format('woff2'),
-       url('/fonts/AllRounder-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   body {
     min-height: max(884px, 100dvh);
     background-color: theme('colors.background');
     color: theme('colors.on-background');
-    font-family: 'AllRounder', theme('fontFamily.body-md');
+    font-family: theme('fontFamily.body-md');
   }
 }
 

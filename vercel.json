@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd koru-frontend && npm install",
+  "buildCommand": "cd koru-frontend && npm run build",
+  "outputDirectory": "koru-frontend/dist",
+  "framework": "vite"
+}
