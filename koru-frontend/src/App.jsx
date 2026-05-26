@@ -27,7 +27,7 @@ function App() {
         <section className="px-container-margin py-stack-lg space-y-6 border-b border-black">
           <h2 className="font-headline-lg text-headline-lg border-b border-black pb-2">The <span className="italic">Koru</span> Story</h2>
           <p className="text-body-md text-black leading-relaxed">
-            Koru brings bold Chinese flavours to Hyderabad with a modern twist. We are a high-velocity, delivery-first kitchen focused on the intersection of traditional culinary heritage and the hyper-modern rhythm of urban life. While our heart beats for delivery, we offer premium dine-in experiences at our Banjara Hills flagship.
+            Koru brings bold Chinese flavours to Hyderabad with a modern twist. We are a high-velocity, delivery-first cloud kitchen focused on the intersection of traditional culinary heritage and the hyper-modern rhythm of urban life. While our heart beats for delivery, we offer exceptional cloud kitchen experiences at our Banjara Hills flagship.
           </p>
       
         </section>
