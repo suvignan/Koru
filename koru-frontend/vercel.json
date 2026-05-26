@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "devCommand": "vite --host",
+  "env": {
+    "VITE_API_URL": "@koru_api_url"
+  },
+  "regions": ["sfo1"]
+}
