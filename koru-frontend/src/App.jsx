@@ -37,7 +37,7 @@ function App() {
         {/* Food Gallery Section */}
         <section className="py-stack-lg border-b border-black">
           <div className="px-container-margin flex items-center justify-between mb-6">
-            <h2 className="font-headline-lg text-headline-lg text-black">Our <span className="italic font-normal">Creations</span></h2>
+            <h2 className="font-headline-lg text-headline-lg text-black font-bold">Our <span className="italic font-normal">Creations</span></h2>
             <span className="text-black font-label-bold text-label-bold underline cursor-pointer hover:text-black/70">View Menu</span>
           </div>
           <div className="overflow-x-auto whitespace-nowrap flex gap-4 px-container-margin no-scrollbar pb-4">
@@ -52,7 +52,7 @@ function App() {
               { src: 'Koru_01083.jpg', name: 'Chicken 555' },
               { src: 'Koru_01101.jpg', name: 'Koru Creation 6' },
               { src: 'Koru_01140.jpg', name: 'Chicken Lollipop Wet' },
-              { src: 'Koru_01153.jpg', name: 'Koru Creation 8' },
+              { src: 'Koru_01153.jpg', name: 'Wok tossed Chilli Panner' },
               { src: 'Koru_01192.jpg', name: 'Chicken 65' },
               { src: 'Koru_01221.jpg', name: 'Veg Fried Rice' },
               { src: 'Koru_01230.jpg', name: 'Egg Fried Rice' },
