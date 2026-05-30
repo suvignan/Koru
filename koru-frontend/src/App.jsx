@@ -120,7 +120,7 @@ function App() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-base text-black/60">
             <span>+91 8179062291</span>
             <span>Velyxofoods@gmail.com</span>
-            <span>7:30 PM – 4:00 AM (Daily)</span>
+            <span>12:00 Pm – 4:00 AM </span>
             <span className="w-full mt-2 font-label-bold">A Unit Under Velyxo Foods LLP</span>
           </div>
         </div>
