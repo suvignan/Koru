@@ -50,7 +50,7 @@ function App() {
               { src: 'Koru_01034.jpg', name: 'Dragon Chicken ' },
               { src: 'Koru_01073.jpg', name: 'Honey Chilli Chicken' },
               { src: 'Koru_01083.jpg', name: 'Chicken 555' },
-              { src: 'Koru_01101.jpg', name: 'Koru Creation 6' },
+              { src: 'Koru_01101.jpg', name: 'Classic Panner 65 ' },
               { src: 'Koru_01140.jpg', name: 'Chicken Lollipop Wet' },
               { src: 'Koru_01153.jpg', name: 'Wok tossed Chilli Panner' },
               { src: 'Koru_01192.jpg', name: 'Chicken 65' },
