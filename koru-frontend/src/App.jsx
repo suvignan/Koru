@@ -10,8 +10,8 @@ function App() {
         <section className="relative h-[600px] flex flex-col items-center justify-center px-container-margin pb-stack-lg overflow-hidden border-b border-black">
           <div className="relative z-10 flex flex-col items-center text-center space-y-4 max-w-lg mb-8">
             <img alt="KORU" className="w-64 md:w-80 object-contain aspect-square mix-blend-multiply" src="/images/000.png" />
-            <h1 className="font-display-2xl text-4xl md:text-5xl uppercase tracking-widest text-black pt-2">Koru</h1>
-            <h2 className="font-display-xl text-2xl md:text-3xl text-black whitespace-nowrap pb-2">
+            <h1 className="font-display-2xl font-brand-allrounder text-4xl md:text-5xl uppercase tracking-widest text-black pt-2">Koru</h1>
+            <h2 className="font-display-m font-brand-allrounder text-xl md:text-2xl text-black whitespace-nowrap pb-2">
               Modern Chinese Kitchen.
             </h2>
             <p className="font-body-lg text-lg text-black/80">

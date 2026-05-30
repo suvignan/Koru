@@ -41,14 +41,15 @@ export default {
       },
       fontFamily: {
         // Default sans used by Tailwind utilities
-        sans: ["AllRounder", "Be Vietnam Pro", "Space Grotesk", "sans-serif"],
-        "headline-lg": ["AllRounder", "Space Grotesk", "sans-serif"],
-        "body-lg": ["AllRounder", "Be Vietnam Pro", "sans-serif"],
-        "body-md": ["AllRounder", "Be Vietnam Pro", "sans-serif"],
-        "label-bold": ["AllRounder", "Space Grotesk", "sans-serif"],
-        "price-display": ["AllRounder", "Space Grotesk", "sans-serif"],
-        "display-xl": ["AllRounder", "Space Grotesk", "sans-serif"],
-        "headline-md": ["AllRounder", "Space Grotesk", "sans-serif"]
+        sans: ["Be Vietnam Pro", "Space Grotesk", "sans-serif"],
+        "headline-lg": ["Space Grotesk", "sans-serif"],
+        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+        "body-md": ["Be Vietnam Pro", "sans-serif"],
+        "label-bold": ["Space Grotesk", "sans-serif"],
+        "price-display": ["Space Grotesk", "sans-serif"],
+        "display-xl": ["Space Grotesk", "sans-serif"],
+        "headline-md": ["Space Grotesk", "sans-serif"],
+        brand: ["AllrounderMonument", "Space Grotesk", "sans-serif"]
       },
       fontSize: {
         "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
